@@ -130,6 +130,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  border: none;
 }
 
 .hero-btn:hover,
@@ -203,4 +204,44 @@ body {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+
+/* Portfolio Page*/
+
+/* Portfolio Button */
+
+.portfolio-btn{
+    font-family:inherit ;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+}
+
+.current-btn,
+.portfolio-btn:hover,
+.portfolio-btn:focus{
+  color: var(--light-text-color);
+  background-color: var(--accent-color);
+}
+
+
+/* Portfolio works */
+
+.portfolio .subtitle{
+    color:var(--primary-text-color);
+   
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio .desc{
+    color: var(--desc-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
