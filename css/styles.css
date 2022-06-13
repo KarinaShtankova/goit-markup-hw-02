@@ -23,8 +23,6 @@
   --primary-font-family: 'Roboto', sans-serif;
   --secondary-font-family: 'Raleway', sans-serif;
 
-  --primary-font-weight: 400;
-
   --primary-font-size: 14px;
 }
 
@@ -37,6 +35,20 @@ body {
 }
 
 /* Common styles start */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .logo {
   color: var(--accent-color);
@@ -136,6 +148,7 @@ body {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--hover-btn-color);
+  cursor: pointer;
 }
 
 /* Benefits */
@@ -194,6 +207,8 @@ body {
   color: var(--address-text-color);
 }
 
+.footer .address:hover,
+.footer .address:focus,
 .footer .contact:hover,
 .footer .contact:focus {
   color: var(--accent-color);
@@ -206,42 +221,45 @@ body {
   letter-spacing: 0.03em;
 }
 
-
 /* Portfolio Page*/
 
 /* Portfolio Button */
 
-.portfolio-btn{
-    font-family:inherit ;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    border: none;
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
 }
 
 .current-btn,
 .portfolio-btn:hover,
-.portfolio-btn:focus{
+.portfolio-btn:focus {
   color: var(--light-text-color);
   background-color: var(--accent-color);
 }
 
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  cursor: pointer;
+}
 
 /* Portfolio works */
 
-.portfolio .subtitle{
-    color:var(--primary-text-color);
-   
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+.portfolio .subtitle {
+  color: var(--primary-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
-.portfolio .desc{
-    color: var(--desc-text-color);
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
+.portfolio .desc {
+  color: var(--desc-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
